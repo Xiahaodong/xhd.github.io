@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>计算器作业</title>
+    <script type="text/javascript" src="JS/compute.js"></script>
+    <!-- 设置样式 -->
+    <style type="text/css">
+        #jisuan{
+            background-size:cover;
+            background-image:url(images/com.jpg) ;
+            border: 2px solid rgb(112, 226, 198);
+            width: 200px;
+            height: 300px;
+            margin:0 auto;
+        }
+        #AC,#qi,#si,#yi,#lin{
+            margin-left: 10px;
+        }
+        #AC,#lin{
+            width: 89px;
+        }
+        input{
+            font-family: "喵呜字体";
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 6px;
+            opacity:60%;
+            margin-top:5px;
+            display: inline-block;
+            width: 42px;
+            height: 40px;
+        }
+        #top input{
+            margin: 10px;
+            width: 180px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 完成计算器html界面 -->
+    <div id="jisuan">
+        <div id="top"><input type="text"  id="showValue" disabled='disabled'></div>
+        <div id="hang1">
+            <input type="button" value="AC" id="AC" onclick="cle()">
+            <input type="button" value="/" onclick="show('/')">
+            <input type="button" value="%" onclick="show('%')">
+        </div>
+        <div id="hang2">
+            <input type="button" value="7" id="qi" onclick="show('7')">
+            <input type="button" value="8" onclick="show('8')">
+            <input type="button" value="9" onclick="show('9')">
+            <input type="button" value="+" onclick="show('+')">
+        </div>
+        <div id="hang3">
+            <input type="button" value="4" id="si" onclick="show('4')">
+            <input type="button" value="5" onclick="show('5')">
+            <input type="button" value="6" onclick="show('6')">
+            <input type="button" value="-" onclick="show('-')">
+        </div>
+        <div id="hang4">
+            <input type="button" value="1" id="yi" onclick="show('1')">
+            <input type="button" value="2" onclick="show('2')">
+            <input type="button" value="3" onclick="show('3')">
+            <input type="button" value="*" onclick="show('*')">
+        </div>
+        <div id="hang5">
+            <input type="button" value="0" id="lin" onclick="show('0')">
+            <input type="button" value="." onclick="show('.')">
+            <input type="button" value="=" onclick="re('=')">
+        </div>
+    </div>
+</body>
+</html>
